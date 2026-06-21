@@ -1,0 +1,43 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#050814"/>
+  <path d="M0 0h1280v720H0z" fill="url(#bg)"/>
+  <path d="M0 0h1280v720H0z" fill="url(#grid)" opacity=".26"/>
+  <text x="80" y="76" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="700">PUBLIC PROOF</text>
+  <text x="80" y="125" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="43" font-weight="850">GitHub Cleanup Center</text>
+  <text x="80" y="162" fill="#CBD5E1" font-family="Inter,Segoe UI,sans-serif" font-size="19">Turn repositories into readable proof with bios, READMEs, screenshots, and pinned projects.</text>
+  <rect x="80" y="213" width="520" height="394" rx="18" fill="#10192B" stroke="#263B5B"/>
+  <text x="110" y="262" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="800">Cleanup Checklist</text>
+  <g font-family="Inter,Segoe UI,sans-serif" font-size="17" font-weight="700">
+    <rect x="110" y="294" width="210" height="48" rx="10" fill="#112438" stroke="#22D3EE"/>
+    <text x="150" y="324" fill="#E2E8F0">Profile README</text>
+    <rect x="340" y="294" width="210" height="48" rx="10" fill="#112438" stroke="#334155"/>
+    <text x="380" y="324" fill="#E2E8F0">Pin best repos</text>
+    <rect x="110" y="363" width="210" height="48" rx="10" fill="#112438" stroke="#334155"/>
+    <text x="150" y="393" fill="#E2E8F0">Add screenshots</text>
+    <rect x="340" y="363" width="210" height="48" rx="10" fill="#112438" stroke="#334155"/>
+    <text x="380" y="393" fill="#E2E8F0">Live demo links</text>
+    <rect x="110" y="432" width="210" height="48" rx="10" fill="#112438" stroke="#334155"/>
+    <text x="150" y="462" fill="#E2E8F0">Repo topics</text>
+    <rect x="340" y="432" width="210" height="48" rx="10" fill="#112438" stroke="#334155"/>
+    <text x="380" y="462" fill="#E2E8F0">Architecture diagram</text>
+  </g>
+  <rect x="650" y="213" width="550" height="394" rx="18" fill="#10192B" stroke="#263B5B"/>
+  <text x="680" y="262" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="800">README Generator</text>
+  <rect x="680" y="294" width="490" height="274" rx="14" fill="#050814" stroke="#1E293B"/>
+  <text x="710" y="332" fill="#E2E8F0" font-family="JetBrains Mono,Consolas,monospace" font-size="16"># ForgePanel</text>
+  <text x="710" y="372" fill="#94A3B8" font-family="JetBrains Mono,Consolas,monospace" font-size="14">A self-service deployment dashboard</text>
+  <text x="710" y="412" fill="#67E8F9" font-family="JetBrains Mono,Consolas,monospace" font-size="14">## Features</text>
+  <text x="710" y="447" fill="#CBD5E1" font-family="JetBrains Mono,Consolas,monospace" font-size="14">- App list and status cards</text>
+  <text x="710" y="477" fill="#CBD5E1" font-family="JetBrains Mono,Consolas,monospace" font-size="14">- Mock deploy history</text>
+  <text x="710" y="507" fill="#CBD5E1" font-family="JetBrains Mono,Consolas,monospace" font-size="14">- Logs and environment variables</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720">
+      <stop stop-color="#06111F"/>
+      <stop offset=".55" stop-color="#081A2D"/>
+      <stop offset="1" stop-color="#120B29"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" stroke="#94A3B8" stroke-opacity=".16"/>
+    </pattern>
+  </defs>
+</svg>

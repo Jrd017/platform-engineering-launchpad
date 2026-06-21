@@ -1,0 +1,83 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#050814"/>
+  <path d="M0 0h1280v720H0z" fill="url(#bg)"/>
+  <path d="M0 0h1280v720H0z" fill="url(#grid)" opacity=".3"/>
+  <rect x="34" y="34" width="240" height="652" rx="18" fill="#07101F" stroke="#17324C"/>
+  <text x="62" y="82" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="700">JARED</text>
+  <text x="62" y="118" fill="#F8FAFC" font-family="Inter,Segoe UI,sans-serif" font-size="24" font-weight="800">Interactive Roadmap</text>
+  <rect x="52" y="178" width="204" height="46" rx="10" fill="#123045" stroke="#22D3EE"/>
+  <text x="82" y="207" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700">Roadmap Diagram</text>
+  <text x="330" y="77" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="700">PROGRESS OVERVIEW</text>
+  <text x="330" y="119" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="39" font-weight="850">Vertical Platform Engineering Path</text>
+  <g stroke-linecap="round">
+    <path d="M646 152C710 204 574 242 642 300C715 362 575 397 642 454C716 516 577 560 646 626" stroke="#17253A" stroke-width="15"/>
+    <path d="M646 152C710 204 574 242 642 300C715 362 575 397 642 454C716 516 577 560 646 626" stroke="url(#spine)" stroke-width="7"/>
+  </g>
+  <g font-family="Inter,Segoe UI,sans-serif">
+    <g transform="translate(335 128)">
+      <rect width="246" height="132" rx="15" fill="#111C30" stroke="#263B5B"/>
+      <text x="22" y="38" fill="#C4B5FD" font-size="13" font-weight="750">Stage 1</text>
+      <text x="22" y="75" fill="#FFFFFF" font-size="21" font-weight="800">GitHub cleanup</text>
+      <rect x="22" y="97" width="178" height="8" rx="4" fill="#0B1220"/>
+      <rect x="22" y="97" width="68" height="8" rx="4" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(705 214)">
+      <rect width="246" height="132" rx="15" fill="#111C30" stroke="#263B5B"/>
+      <text x="22" y="38" fill="#67E8F9" font-size="13" font-weight="750">Stage 2</text>
+      <text x="22" y="75" fill="#FFFFFF" font-size="21" font-weight="800">Resume</text>
+      <rect x="22" y="97" width="178" height="8" rx="4" fill="#0B1220"/>
+      <rect x="22" y="97" width="98" height="8" rx="4" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(335 350)">
+      <rect width="246" height="132" rx="15" fill="#111C30" stroke="#22D3EE"/>
+      <text x="22" y="38" fill="#67E8F9" font-size="13" font-weight="750">Stage 5</text>
+      <text x="22" y="75" fill="#FFFFFF" font-size="21" font-weight="800">Platform fundamentals</text>
+      <rect x="22" y="97" width="178" height="8" rx="4" fill="#0B1220"/>
+      <rect x="22" y="97" width="48" height="8" rx="4" fill="url(#bar)"/>
+    </g>
+    <g transform="translate(705 492)">
+      <rect width="246" height="132" rx="15" fill="#111C30" stroke="#263B5B"/>
+      <text x="22" y="38" fill="#C4B5FD" font-size="13" font-weight="750">Stage 7</text>
+      <text x="22" y="75" fill="#FFFFFF" font-size="21" font-weight="800">Platform Lab</text>
+      <rect x="22" y="97" width="178" height="8" rx="4" fill="#0B1220"/>
+      <rect x="22" y="97" width="28" height="8" rx="4" fill="url(#bar)"/>
+    </g>
+    <g fill="#020617" stroke="#67E8F9" stroke-width="2">
+      <circle cx="646" cy="152" r="18"/>
+      <circle cx="646" cy="300" r="18"/>
+      <circle cx="646" cy="454" r="18"/>
+      <circle cx="646" cy="626" r="18"/>
+    </g>
+    <g fill="#FFFFFF" font-size="16" font-weight="800" text-anchor="middle">
+      <text x="646" y="158">1</text>
+      <text x="646" y="306">3</text>
+      <text x="646" y="460">5</text>
+      <text x="646" y="632">7</text>
+    </g>
+  </g>
+  <rect x="996" y="155" width="214" height="397" rx="18" fill="#10192B" stroke="#263B5B"/>
+  <text x="1026" y="207" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="850">Stage Details</text>
+  <text x="1026" y="251" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700">Why it matters</text>
+  <text x="1026" y="286" fill="#CBD5E1" font-family="Inter,Segoe UI,sans-serif" font-size="15">Build proof that recruiters can skim.</text>
+  <text x="1026" y="345" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700">Next action</text>
+  <text x="1026" y="380" fill="#CBD5E1" font-family="Inter,Segoe UI,sans-serif" font-size="15">Document one visible project.</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720">
+      <stop stop-color="#06111F"/>
+      <stop offset=".55" stop-color="#081A2D"/>
+      <stop offset="1" stop-color="#120B29"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" stroke="#94A3B8" stroke-opacity=".18"/>
+    </pattern>
+    <linearGradient id="spine" x1="646" y1="152" x2="646" y2="626">
+      <stop stop-color="#22D3EE"/>
+      <stop offset=".53" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="178" y2="0">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+</svg>

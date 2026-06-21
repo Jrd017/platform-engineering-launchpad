@@ -1,0 +1,88 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="720" fill="#050814"/>
+  <path d="M0 0h1280v720H0z" fill="url(#bg)"/>
+  <path d="M0 0h1280v720H0z" fill="url(#grid)" opacity=".32"/>
+  <rect x="28" y="28" width="250" height="664" rx="18" fill="#07101F" stroke="#17324C"/>
+  <text x="56" y="74" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="13" font-weight="700">JARED</text>
+  <text x="56" y="108" fill="#F8FAFC" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="800">Platform Engineering</text>
+  <text x="56" y="139" fill="#F8FAFC" font-family="Inter,Segoe UI,sans-serif" font-size="25" font-weight="800">Launchpad</text>
+  <g font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="650">
+    <rect x="48" y="190" width="210" height="46" rx="10" fill="#123045" stroke="#22D3EE" opacity=".9"/>
+    <text x="82" y="219" fill="#FFFFFF">Home Dashboard</text>
+    <text x="82" y="274" fill="#CBD5E1">Interactive Roadmap</text>
+    <text x="82" y="329" fill="#CBD5E1">Platform Roadmap</text>
+    <text x="82" y="384" fill="#CBD5E1">Certifications</text>
+    <text x="82" y="439" fill="#CBD5E1">GitHub Cleanup</text>
+    <text x="82" y="494" fill="#CBD5E1">Resume Builder</text>
+    <text x="82" y="549" fill="#CBD5E1">Project Board</text>
+  </g>
+  <g transform="translate(315 44)">
+    <rect width="906" height="176" rx="18" fill="#10192B" stroke="#21344F"/>
+    <text x="34" y="54" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="14" font-weight="700">CAREER DASHBOARD</text>
+    <text x="34" y="98" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="42" font-weight="850">Jared Platform Engineering Launchpad</text>
+    <text x="34" y="134" fill="#CBD5E1" font-family="Inter,Segoe UI,sans-serif" font-size="19">You already have proof. Now package it. Build. Publish. Document. Repeat.</text>
+    <rect x="690" y="44" width="150" height="82" rx="14" fill="#0B1220" stroke="#334155"/>
+    <text x="717" y="76" fill="#94A3B8" font-family="Inter,Segoe UI,sans-serif" font-size="13">Overall Progress</text>
+    <text x="717" y="111" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="30" font-weight="800">28%</text>
+  </g>
+  <g transform="translate(315 256)">
+    <rect width="210" height="150" rx="16" fill="#111C30" stroke="#233857"/>
+    <text x="22" y="42" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="750">Roadmap</text>
+    <rect x="22" y="76" width="164" height="10" rx="5" fill="#0B1220"/>
+    <rect x="22" y="76" width="76" height="10" rx="5" fill="url(#bar)"/>
+    <text x="22" y="119" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="15">Current focus</text>
+  </g>
+  <g transform="translate(549 256)">
+    <rect width="210" height="150" rx="16" fill="#111C30" stroke="#233857"/>
+    <text x="22" y="42" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="750">Free Certs</text>
+    <rect x="22" y="76" width="164" height="10" rx="5" fill="#0B1220"/>
+    <rect x="22" y="76" width="48" height="10" rx="5" fill="url(#bar)"/>
+    <text x="22" y="119" fill="#C4B5FD" font-family="Inter,Segoe UI,sans-serif" font-size="15">Studying</text>
+  </g>
+  <g transform="translate(783 256)">
+    <rect width="210" height="150" rx="16" fill="#111C30" stroke="#233857"/>
+    <text x="22" y="42" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="750">GitHub Cleanup</text>
+    <rect x="22" y="76" width="164" height="10" rx="5" fill="#0B1220"/>
+    <rect x="22" y="76" width="96" height="10" rx="5" fill="url(#bar)"/>
+    <text x="22" y="119" fill="#67E8F9" font-family="Inter,Segoe UI,sans-serif" font-size="15">Public proof</text>
+  </g>
+  <g transform="translate(1017 256)">
+    <rect width="204" height="150" rx="16" fill="#111C30" stroke="#233857"/>
+    <text x="22" y="42" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="18" font-weight="750">Resume</text>
+    <rect x="22" y="76" width="160" height="10" rx="5" fill="#0B1220"/>
+    <rect x="22" y="76" width="112" height="10" rx="5" fill="url(#bar)"/>
+    <text x="22" y="119" fill="#A7F3D0" font-family="Inter,Segoe UI,sans-serif" font-size="15">One page</text>
+  </g>
+  <g transform="translate(315 443)">
+    <rect width="906" height="174" rx="18" fill="#10192B" stroke="#21344F"/>
+    <text x="30" y="47" fill="#FFFFFF" font-family="Inter,Segoe UI,sans-serif" font-size="22" font-weight="800">Quick Actions</text>
+    <g fill="#111C30" stroke="#263B5B">
+      <rect x="30" y="76" width="130" height="54" rx="12"/>
+      <rect x="178" y="76" width="130" height="54" rx="12"/>
+      <rect x="326" y="76" width="130" height="54" rx="12"/>
+      <rect x="474" y="76" width="160" height="54" rx="12"/>
+      <rect x="652" y="76" width="130" height="54" rx="12"/>
+    </g>
+    <g fill="#E2E8F0" font-family="Inter,Segoe UI,sans-serif" font-size="15" font-weight="700">
+      <text x="56" y="109">Roadmap</text>
+      <text x="204" y="109">GitHub</text>
+      <text x="352" y="109">Resume</text>
+      <text x="499" y="109">LinkedIn Post</text>
+      <text x="690" y="109">Quiz</text>
+    </g>
+  </g>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720">
+      <stop stop-color="#07101F"/>
+      <stop offset=".48" stop-color="#08192B"/>
+      <stop offset="1" stop-color="#150B2E"/>
+    </linearGradient>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" stroke="#94A3B8" stroke-opacity=".18"/>
+    </pattern>
+    <linearGradient id="bar" x1="22" y1="76" x2="186" y2="86">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+  </defs>
+</svg>

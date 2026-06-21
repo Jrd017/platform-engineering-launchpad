@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "items": {
+    "github-bio": {
+      "checked": true,
+      "status": "Done",
+      "notes": "Updated profile bio with backend and platform engineering direction."
+    },
+    "github-profile-readme": {
+      "checked": true,
+      "status": "Done",
+      "notes": "Created profile README draft with goals, stack, and featured repos."
+    },
+    "github-pin-repos": {
+      "checked": false,
+      "status": "Studying",
+      "notes": "Choose best repos after README cleanup."
+    },
+    "resume-name": {
+      "checked": true,
+      "status": "Done"
+    },
+    "resume-github": {
+      "checked": true,
+      "status": "Done"
+    },
+    "resume-summary": {
+      "checked": true,
+      "status": "Done",
+      "notes": "Use the platform engineering focused summary."
+    },
+    "resume-projects": {
+      "checked": false,
+      "status": "Studying",
+      "notes": "Need stronger bullets for Sandata, Where Did I Put It, and Platform Engineering Lab."
+    },
+    "portfolio-deploy-vercel": {
+      "checked": false,
+      "status": "Studying"
+    },
+    "portfolio-resume-pdf": {
+      "checked": false,
+      "status": "Not Started"
+    },
+    "platform:linux-basics": {
+      "checked": true,
+      "status": "Done"
+    },
+    "platform:git-github": {
+      "checked": true,
+      "status": "Done"
+    },
+    "platform:docker-images": {
+      "checked": false,
+      "status": "Studying"
+    },
+    "platform:github-actions": {
+      "checked": false,
+      "status": "Studying"
+    },
+    "free-cert:cisco-networking-basics": {
+      "checked": false,
+      "status": "Studying",
+      "badgeUrl": "",
+      "completedDate": "",
+      "certificateUrl": "",
+      "notes": "Do not mark done until certificate is finished."
+    },
+    "free-cert:cisco-linux-unhatched": {
+      "checked": true,
+      "status": "Done",
+      "badgeUrl": "https://example.com/linux-badge-placeholder",
+      "completedDate": "2026-06-15",
+      "certificateUrl": "https://example.com/linux-certificate-placeholder"
+    },
+    "project:forgepanel": {
+      "checked": false,
+      "status": "Studying",
+      "notes": "Highest priority flagship project."
+    },
+    "project:platform-engineering-lab": {
+      "checked": false,
+      "status": "Studying",
+      "notes": "Create Docker, CI/CD, Kubernetes, Terraform, GitOps, and monitoring folders."
+    },
+    "week-1-fix-github": {
+      "checked": true,
+      "status": "Done"
+    },
+    "week-1-profile-readme": {
+      "checked": true,
+      "status": "Done"
+    },
+    "week-1-start-resume": {
+      "checked": true,
+      "status": "Done"
+    },
+    "daily-study": {
+      "checked": true,
+      "status": "Done"
+    },
+    "daily-build": {
+      "checked": true,
+      "status": "Done"
+    },
+    "daily-document": {
+      "checked": false,
+      "status": "Studying"
+    }
+  },
+  "customQuestions": [
+    {
+      "id": "sample-question-platform-api",
+      "topic": "Platform Engineering Fundamentals",
+      "question": "What is the main goal of a platform engineering team?",
+      "choices": [
+        "Create paved roads and self-service workflows for developers",
+        "Replace every developer on the team",
+        "Only write frontend animations",
+        "Avoid documentation"
+      ],
+      "correctAnswer": "Create paved roads and self-service workflows for developers",
+      "explanation": "Platform engineering improves developer experience by creating reusable, reliable paths for building and shipping software."
+    },
+    {
+      "id": "sample-question-docker-compose",
+      "topic": "Docker",
+      "question": "What is Docker Compose commonly used for?",
+      "choices": [
+        "Running multi-container local environments",
+        "Buying cloud certifications",
+        "Writing LinkedIn posts",
+        "Replacing GitHub"
+      ],
+      "correctAnswer": "Running multi-container local environments",
+      "explanation": "Docker Compose defines and runs multiple services from a single YAML file."
+    }
+  ],
+  "quizAttempts": [
+    {
+      "id": "sample-attempt-1",
+      "topic": "All topics",
+      "score": 6,
+      "total": 7,
+      "createdAt": "2026-06-20T10:30:00.000Z",
+      "wrongQuestionIds": [
+        "iac-meaning"
+      ]
+    }
+  ]
+}
