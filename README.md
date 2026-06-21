@@ -22,25 +22,46 @@ Jared Platform Engineering Launchpad is an all-in-one dashboard for tracking:
 
 Version 1 is intentionally frontend-only. It uses `localStorage` for saved progress and is structured so a backend can be added later.
 
+## Responsive Design Status
+
+The app is built with responsive layouts:
+
+- Desktop uses a persistent left sidebar and wide dashboard panels.
+- Tablet and smaller screens switch to a horizontal top navigation.
+- Cards, roadmap panels, checklists, and forms collapse into narrower grids.
+- Tablet and desktop checks currently show no horizontal page overflow on the main routes.
+- The app is best showcased on desktop, but the structure is mobile responsive for version 1.
+
+The screenshots below are desktop captures. Mobile screenshots can be added later after final spacing polish.
+
+## Version 1 Scope Note
+
+Some sections are intentionally draft/core-idea tools in version 1:
+
+- The Personal Project Idea Board is a planning board, not completed project implementations.
+- The LinkedIn Achievement Poster generates drafts only and does not post to LinkedIn.
+- The Study Guide and Quiz System is a local prototype/core study idea, not a full production learning platform yet.
+- ForgePanel, Platform Engineering Lab, and other project ideas are roadmap targets that will become separate proof projects later.
+
 ## Screenshots
 
-These are real-looking placeholder screenshots for the first GitHub version. Replace them with actual deployed screenshots once the project is live.
+Current desktop screenshots from the app:
 
 ### Home Dashboard
 
-![Home Dashboard](public/screenshots/dashboard.svg)
+![Home Dashboard](public/screenshots/home-dashboard.png)
 
 ### Interactive Roadmap
 
-![Interactive Roadmap](public/screenshots/roadmap.svg)
+![Interactive Roadmap](public/screenshots/roadmap-diagram.png)
 
 ### GitHub Cleanup Center
 
-![GitHub Cleanup Center](public/screenshots/github-cleanup.svg)
+![GitHub Cleanup Center](public/screenshots/github-cleanup-center.png)
 
-### Quiz System
+### Study Guide and Quiz System
 
-![Quiz System](public/screenshots/quiz.svg)
+![Study Guide and Quiz System](public/screenshots/study-guide-quiz-system.png)
 
 ## Features
 
@@ -60,9 +81,9 @@ These are real-looking placeholder screenshots for the first GitHub version. Rep
 - README generator with copy button
 - Resume builder checklist with readiness score
 - Portfolio website planner
-- LinkedIn achievement draft generator
-- Personal project idea board
-- Quiz builder and quiz runner
+- LinkedIn achievement draft generator for copy-only posts
+- Personal project idea board for core project concepts
+- Local quiz builder and quiz runner prototype
 - Wrong answer review and recent quiz attempt tracking
 - Four-week action plan and daily checklist
 - Mobile responsive layout
@@ -76,7 +97,7 @@ These are real-looking placeholder screenshots for the first GitHub version. Rep
 - Framer Motion
 - Lucide React
 - LocalStorage
-- SVG placeholder assets
+- PNG and SVG screenshot assets
 
 ## Getting Started
 
@@ -141,7 +162,7 @@ content/
   Importable sample data and future content artifacts.
 
 public/screenshots/
-  Placeholder screenshot assets for the README.
+  README screenshots and placeholder visual assets.
 ```
 
 ## Roadmap
@@ -194,7 +215,7 @@ npm run build
 
 ## Future Improvements
 
-- Replace placeholder screenshots with real app screenshots.
+- Add mobile screenshots after final responsive spacing polish.
 - Add real project case studies for Sandata, Where Did I Put It, and ForgePanel.
 - Add backend persistence.
 - Add GitHub API powered repo audit suggestions.
