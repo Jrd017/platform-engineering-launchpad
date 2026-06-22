@@ -6,6 +6,35 @@ This project is built for Jared P. Oxales, a 4th year Computer Science student f
 
 > You are not starting from zero. You are packaging your proof.
 
+## Why I Built This
+
+I built this website because I needed a clear visual system for my learning path.
+
+As a 4th year Computer Science student, I realized that having ideas, school projects, and goals is not enough if they are scattered. I needed one place where I could see my roadmap, track my progress, organize my project ideas, prepare my portfolio, and stay accountable.
+
+This website is my personal career launchpad. It helps me visualize the path from software engineering foundations to backend development, Python automation, DevOps, infrastructure, and platform engineering.
+
+The main purpose of this project is to turn pressure into direction. Instead of only thinking about what I need to learn, I can see it clearly, break it into steps, and track my progress.
+
+This website helps me:
+
+- Visualize my learning roadmap.
+- Track my software engineering foundation.
+- Organize my TypeScript and Python learning path.
+- Plan my platform engineering journey.
+- Monitor free certifications and study resources.
+- Clean and improve my GitHub profile.
+- Prepare my resume and portfolio.
+- Store project ideas in one place.
+- Stay consistent with weekly goals.
+- Build proof of work for internships.
+
+This project is also part of my portfolio. It shows that I can build a real interactive dashboard using Next.js, TypeScript, Tailwind CSS, and modern UI design while solving a personal problem.
+
+The goal is simple:
+
+Build. Publish. Document. Repeat.
+
 ## Project Overview
 
 Jared Platform Engineering Launchpad is an all-in-one dashboard for tracking:
