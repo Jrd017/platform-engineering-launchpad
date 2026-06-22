@@ -1,8 +1,8 @@
-# Jared Platform Engineering Launchpad
+# Platform Engineering Launchpad
 
 A polished interactive career dashboard for organizing my path toward platform engineering, backend development, and developer tools work.
 
-This project is built for Jared P. Oxales, a 4th year Computer Science student from TIP Manila. The goal is simple: turn existing academic projects, leadership experience, study progress, and project ideas into a clear public proof system.
+This project is built for a 4th year Computer Science student. The goal is simple: turn existing academic projects, leadership experience, study progress, and project ideas into a clear public proof system.
 
 > You are not starting from zero. You are packaging your proof.
 
@@ -37,7 +37,7 @@ Build. Publish. Document. Repeat.
 
 ## Project Overview
 
-Jared Platform Engineering Launchpad is an all-in-one dashboard for tracking:
+Platform Engineering Launchpad is an all-in-one dashboard for tracking:
 
 - Platform engineering study progress
 - Python learning path, free certificates, practice, and projects
