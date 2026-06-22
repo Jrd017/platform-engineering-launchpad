@@ -54,7 +54,7 @@ textarea {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
     inset 0 -1px 0 rgba(255, 255, 255, 0.035),
-    0 12px 26px rgba(0, 0, 0, 0.18);
+    0 8px 18px rgba(0, 0, 0, 0.14);
 }
 
 html.theme-animating body,
@@ -106,17 +106,18 @@ html[data-theme="light"] .shell-grid {
 .glass-panel {
   position: relative;
   isolation: isolate;
+  content-visibility: auto;
+  contain-intrinsic-size: 320px;
   border: 1px solid rgba(255, 255, 255, 0.13);
   background:
     radial-gradient(circle at 18% 0%, rgba(190, 242, 100, 0.08), transparent 34%),
     radial-gradient(circle at 86% 100%, rgba(244, 114, 182, 0.08), transparent 32%),
     linear-gradient(145deg, rgba(255, 255, 255, 0.105) 0%, rgba(255, 255, 255, 0.042) 38%, rgba(8, 13, 22, 0.84) 100%);
   box-shadow:
-    0 34px 86px rgba(0, 0, 0, 0.48),
-    0 13px 34px rgba(0, 0, 0, 0.35),
+    0 18px 42px rgba(0, 0, 0, 0.32),
+    0 6px 18px rgba(0, 0, 0, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.13),
     inset 0 -1px 0 rgba(255, 255, 255, 0.045);
-  backdrop-filter: blur(24px) saturate(1.18);
   transition:
     border-color 220ms ease,
     box-shadow 220ms ease,
@@ -144,8 +145,8 @@ html[data-theme="light"] .shell-grid {
 .glass-panel:hover {
   border-color: rgba(125, 211, 252, 0.28);
   box-shadow:
-    0 42px 96px rgba(0, 0, 0, 0.54),
-    0 18px 38px rgba(8, 145, 178, 0.12),
+    0 22px 52px rgba(0, 0, 0, 0.36),
+    0 8px 22px rgba(8, 145, 178, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.16),
     inset 0 -1px 0 rgba(255, 255, 255, 0.055);
 }
@@ -157,8 +158,8 @@ html[data-theme="light"] .glass-panel {
     radial-gradient(circle at 86% 100%, rgba(124, 58, 237, 0.08), transparent 32%),
     linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(248, 251, 255, 0.7));
   box-shadow:
-    0 30px 72px rgba(15, 23, 42, 0.16),
-    0 10px 26px rgba(15, 23, 42, 0.1),
+    0 16px 38px rgba(15, 23, 42, 0.1),
+    0 6px 16px rgba(15, 23, 42, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.78);
 }
 
@@ -175,7 +176,7 @@ html[data-theme="light"] .app-mobile-nav {
 .app-sidebar,
 .app-mobile-nav {
   box-shadow:
-    0 20px 54px rgba(0, 0, 0, 0.28),
+    0 12px 34px rgba(0, 0, 0, 0.22),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
@@ -227,7 +228,7 @@ html[data-theme="light"] .app-navbar,
 html[data-theme="light"] .app-sidebar,
 html[data-theme="light"] .app-mobile-nav {
   box-shadow:
-    0 22px 58px rgba(15, 23, 42, 0.12),
+    0 14px 38px rgba(15, 23, 42, 0.1),
     inset 0 1px 0 rgba(255, 255, 255, 0.74);
 }
 
@@ -267,8 +268,8 @@ html[data-theme="light"] .sidebar-link-active {
 
 .floating-card {
   box-shadow:
-    0 26px 58px rgba(0, 0, 0, 0.42),
-    0 10px 24px rgba(0, 0, 0, 0.3),
+    0 12px 30px rgba(0, 0, 0, 0.28),
+    0 5px 14px rgba(0, 0, 0, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
@@ -279,15 +280,15 @@ html[data-theme="light"] .sidebar-link-active {
     linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035)),
     rgba(8, 13, 22, 0.54);
   box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.3),
+    0 6px 16px rgba(0, 0, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.09);
 }
 
 .surface-card:hover {
   border-color: rgba(125, 211, 252, 0.26);
   box-shadow:
-    0 22px 48px rgba(0, 0, 0, 0.38),
-    0 0 28px rgba(34, 211, 238, 0.08),
+    0 8px 20px rgba(0, 0, 0, 0.22),
+    0 0 14px rgba(34, 211, 238, 0.05),
     inset 0 1px 0 rgba(255, 255, 255, 0.12);
 }
 
@@ -502,12 +503,10 @@ html[data-theme="light"] ::placeholder {
   62% {
     opacity: 0.22;
     transform: translate(-50%, -50%) scale(3.2);
-    filter: blur(2px);
   }
   100% {
     opacity: 0;
     transform: translate(-50%, -50%) scale(4.8);
-    filter: blur(12px);
   }
 }
 
@@ -527,17 +526,20 @@ html[data-theme="light"] ::placeholder {
   height: var(--geo-size);
   opacity: 0;
   transform-style: preserve-3d;
+  contain: layout paint;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
   animation: geo-drift var(--geo-duration) linear infinite;
   animation-delay: var(--geo-delay);
-  filter:
-    drop-shadow(0 0 28px rgba(34, 211, 238, 0.24))
-    drop-shadow(0 18px 32px rgba(0, 0, 0, 0.24));
+  box-shadow:
+    0 0 14px rgba(34, 211, 238, 0.08),
+    0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 html[data-theme="light"] .geo-shape {
-  filter:
-    drop-shadow(0 0 28px rgba(14, 165, 233, 0.16))
-    drop-shadow(0 18px 30px rgba(15, 23, 42, 0.1));
+  box-shadow:
+    0 0 12px rgba(14, 165, 233, 0.08),
+    0 8px 18px rgba(15, 23, 42, 0.06);
 }
 
 .geo-cube {
@@ -551,7 +553,7 @@ html[data-theme="light"] .geo-shape {
   background:
     linear-gradient(135deg, rgba(190, 242, 100, 0.09), rgba(34, 211, 238, 0.1)),
     rgba(255, 255, 255, 0.025);
-  backdrop-filter: blur(2px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .geo-cube-face-front {
@@ -621,17 +623,23 @@ html[data-theme="light"] .geo-frame {
     transform: translate3d(-14vw, 0, 0) rotateX(58deg) rotateY(0deg) rotateZ(20deg);
   }
   10% {
-    opacity: 0.46;
+    opacity: 0.34;
   }
   50% {
     transform: translate3d(58vw, var(--geo-float), 0) rotateX(62deg) rotateY(180deg) rotateZ(160deg);
   }
   90% {
-    opacity: 0.34;
+    opacity: 0.24;
   }
   100% {
     opacity: 0;
     transform: translate3d(126vw, var(--geo-float-end), 0) rotateX(58deg) rotateY(360deg) rotateZ(320deg);
+  }
+}
+
+@media (max-width: 1279px) {
+  .geo-shape {
+    display: none;
   }
 }
 

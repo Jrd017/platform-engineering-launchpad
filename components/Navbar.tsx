@@ -118,7 +118,7 @@ export function Navbar() {
           aria-hidden="true"
         />
       ) : null}
-      <header className="app-navbar sticky top-0 z-30 border-b border-white/10 bg-black/35 backdrop-blur-2xl">
+      <header className="app-navbar sticky top-0 z-30 border-b border-white/10 bg-black/35">
       <div className="flex min-h-[73px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <div>
           <p className="text-xs font-medium uppercase text-cyan-100">{isLoaded ? "Progress saved locally" : "Loading local progress"}</p>

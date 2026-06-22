@@ -23,7 +23,7 @@ export function DashboardCard({
   loading?: boolean;
 }) {
   return (
-    <motion.div whileHover={{ y: -7, scale: 1.015 }} transition={{ type: "spring", stiffness: 260, damping: 22 }}>
+    <motion.div whileHover={{ y: -4, scale: 1.008 }} transition={{ type: "spring", stiffness: 260, damping: 24 }}>
       <Link
         href={href}
         className="focus-ring floating-card glass-panel group block h-full rounded-lg p-5 transition hover:border-cyan-300/[0.38] hover:shadow-float"

@@ -54,7 +54,7 @@ export function Sidebar({
     <>
       <aside
         className={clsx(
-          "app-sidebar fixed inset-y-0 left-0 z-30 hidden border-r border-white/10 px-4 py-5 backdrop-blur-2xl transition-[width,padding] duration-300 ease-out lg:block",
+          "app-sidebar fixed inset-y-0 left-0 z-30 hidden border-r border-white/10 px-4 py-5 transition-[width,padding] duration-300 ease-out lg:block",
           collapsed ? "w-24" : "w-72"
         )}
       >
@@ -113,7 +113,7 @@ export function Sidebar({
       </aside>
 
       <nav
-        className="app-mobile-nav scrollbar-soft sticky top-[73px] z-20 flex gap-2 overflow-x-auto border-y border-white/10 bg-black/35 px-4 py-3 backdrop-blur-2xl lg:hidden"
+        className="app-mobile-nav scrollbar-soft sticky top-[73px] z-20 flex gap-2 overflow-x-auto border-y border-white/10 bg-black/35 px-4 py-3 lg:hidden"
         aria-label="Mobile navigation"
       >
         {navigationItems.map((item) => {
