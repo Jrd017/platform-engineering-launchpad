@@ -20,7 +20,10 @@ const config: Config = {
       },
       boxShadow: {
         glow: "0 0 32px rgba(34, 211, 238, 0.18)",
-        violet: "0 0 32px rgba(167, 139, 250, 0.16)"
+        violet: "0 0 32px rgba(167, 139, 250, 0.16)",
+        float: "0 28px 70px rgba(0, 0, 0, 0.46), 0 12px 28px rgba(15, 23, 42, 0.42)",
+        inset: "inset 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 -1px 0 rgba(255, 255, 255, 0.05)",
+        pill: "0 10px 24px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.18)"
       },
       backgroundImage: {
         "grid-lines":

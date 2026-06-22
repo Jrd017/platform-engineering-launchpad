@@ -26,7 +26,7 @@ export function CopyButton({
       type="button"
       onClick={handleCopy}
       className={clsx(
-        "focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-2 text-sm font-medium text-slate-100 transition hover:border-cyan-300/40 hover:bg-cyan-300/10",
+        "focus-ring inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/[0.11] px-3 py-2 text-sm font-medium text-slate-100 shadow-pill backdrop-blur-md transition hover:border-cyan-300/40 hover:bg-cyan-300/10",
         className
       )}
     >

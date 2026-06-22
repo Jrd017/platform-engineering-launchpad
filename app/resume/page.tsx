@@ -45,7 +45,7 @@ export default function ResumePage() {
         </SectionPanel>
 
         <SectionPanel title="Summary Draft">
-          <p className="rounded-lg border border-white/10 bg-slate-950/60 p-4 text-sm leading-6 text-slate-200">{resumeSummaryDraft}</p>
+          <p className="surface-card rounded-lg border border-white/10 bg-slate-950/60 p-4 text-sm leading-6 text-slate-200">{resumeSummaryDraft}</p>
           <CopyButton value={resumeSummaryDraft} className="mt-3" />
         </SectionPanel>
       </section>
@@ -62,7 +62,7 @@ export default function ResumePage() {
         <SectionPanel title="Leadership Items">
           <div className="grid gap-3">
             {leadershipItems.map((item) => (
-              <p key={item} className="rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm text-slate-200">
+              <p key={item} className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm text-slate-200">
                 {item}
               </p>
             ))}

@@ -70,8 +70,37 @@ export const roadmapStages: RoadmapStage[] = [
     nextAction: "Start with the summary, skills, and strongest three projects."
   },
   {
-    id: "portfolio",
+    id: "python-mastery",
     label: "Stage 3",
+    title: "Python Mastery",
+    status: "Core programming",
+    progress: 0,
+    why: "Python helps me build automation, backend APIs, tooling, data scripts, and AI support projects.",
+    whatToDo: [
+      "Cisco Python Essentials 1.",
+      "CS50P.",
+      "freeCodeCamp Python Certification.",
+      "Kaggle Python.",
+      "Cisco Python Essentials 2.",
+      "FastAPI.",
+      "pytest.",
+      "pandas and automation projects."
+    ],
+    studyLinks: [
+      { label: "Python Learning Path", url: "/python-learning-path" },
+      { label: "Cisco Python Essentials 1", url: "https://www.netacad.com/courses/python-essentials-1" },
+      { label: "CS50P", url: "https://cs50.harvard.edu/python/" },
+      { label: "freeCodeCamp Python Certification", url: "https://www.freecodecamp.org/learn/python-v9" },
+      { label: "Kaggle Python", url: "https://www.kaggle.com/learn/python" }
+    ],
+    relatedProject: "File Organizer, GitHub Repo Analyzer, Resume Keyword Checker, FastAPI Certificate Tracker",
+    relatedCertification: "Cisco Python Essentials 1 badge, CS50P free certificate, freeCodeCamp Python Certification, Kaggle Python certificate, Cisco Python Essentials 2 badge",
+    estimatedTime: "8 to 12 weeks",
+    nextAction: "Start Cisco Python Essentials 1."
+  },
+  {
+    id: "portfolio",
+    label: "Stage 4",
     title: "Portfolio",
     status: "Package proof",
     progress: 10,
@@ -88,7 +117,7 @@ export const roadmapStages: RoadmapStage[] = [
   },
   {
     id: "free-certifications",
-    label: "Stage 4",
+    label: "Stage 5",
     title: "Free certifications",
     status: "Build signal",
     progress: 6,
@@ -108,7 +137,7 @@ export const roadmapStages: RoadmapStage[] = [
   },
   {
     id: "platform-fundamentals",
-    label: "Stage 5",
+    label: "Stage 6",
     title: "Platform engineering fundamentals",
     status: "Core study",
     progress: 8,
@@ -138,7 +167,7 @@ export const roadmapStages: RoadmapStage[] = [
   },
   {
     id: "forgepanel",
-    label: "Stage 6",
+    label: "Stage 7",
     title: "ForgePanel project",
     status: "Flagship build",
     progress: 5,
@@ -157,7 +186,7 @@ export const roadmapStages: RoadmapStage[] = [
   },
   {
     id: "platform-lab",
-    label: "Stage 7",
+    label: "Stage 8",
     title: "Platform Engineering Lab",
     status: "Proof lab",
     progress: 4,
@@ -182,7 +211,7 @@ export const roadmapStages: RoadmapStage[] = [
   },
   {
     id: "internship-applications",
-    label: "Stage 8",
+    label: "Stage 9",
     title: "Internship applications",
     status: "Apply while building",
     progress: 3,
@@ -194,7 +223,7 @@ export const roadmapStages: RoadmapStage[] = [
   },
   {
     id: "paid-certifications",
-    label: "Stage 9",
+    label: "Stage 10",
     title: "Paid certifications later",
     status: "Later",
     progress: 0,

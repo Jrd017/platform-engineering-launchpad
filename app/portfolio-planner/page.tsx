@@ -35,7 +35,7 @@ export default function PortfolioPlannerPage() {
         <SectionPanel title="Pages">
           <div className="grid gap-3">
             {portfolioPages.map((page) => (
-              <p key={page} className="rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm text-slate-200">
+              <p key={page} className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm text-slate-200">
                 {page}
               </p>
             ))}

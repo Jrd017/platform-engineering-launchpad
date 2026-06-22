@@ -3,6 +3,7 @@ export type IconKey =
   | "route"
   | "layers"
   | "library"
+  | "code"
   | "award"
   | "trophy"
   | "github"
@@ -39,6 +40,12 @@ export const navigationItems: NavigationItem[] = [
     label: "Study Links Library",
     shortLabel: "Links",
     icon: "library"
+  },
+  {
+    href: "/python-learning-path",
+    label: "Python Learning Path",
+    shortLabel: "Python",
+    icon: "code"
   },
   {
     href: "/free-certifications",

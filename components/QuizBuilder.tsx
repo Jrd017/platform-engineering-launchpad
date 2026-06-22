@@ -117,19 +117,19 @@ export function QuizBuilder() {
           </button>
         </div>
 
-        <div className="rounded-lg border border-white/10 bg-white/[0.04] p-4">
+        <div className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-4">
           <div className="mb-4 flex items-center justify-between gap-3">
             <h3 className="text-sm font-semibold text-white">Custom questions</h3>
             <Badge tone="cyan">{progress.customQuestions.length} saved</Badge>
           </div>
           {progress.customQuestions.length === 0 ? (
-            <p className="rounded-lg border border-dashed border-white/[0.15] p-6 text-center text-sm text-slate-400">
+            <p className="surface-card rounded-lg border border-dashed border-white/[0.15] p-6 text-center text-sm text-slate-400">
               No custom questions yet.
             </p>
           ) : (
             <div className="grid gap-3">
               {progress.customQuestions.map((item) => (
-                <div key={item.id} className="rounded-lg border border-white/10 bg-slate-950/50 p-3">
+                <div key={item.id} className="surface-card rounded-lg border border-white/10 bg-slate-950/50 p-3">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <Badge tone="slate">{item.topic}</Badge>

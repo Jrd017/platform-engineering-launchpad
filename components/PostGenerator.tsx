@@ -120,7 +120,7 @@ ${fields.link ? `Link: ${fields.link}\n\n` : ""}Build. Publish. Document. Repeat
           <OutputCard title="Short version" value={outputs.short} />
           <OutputCard title="Resume bullet" value={outputs.resumeBullet} />
           <OutputCard title="GitHub README update line" value={outputs.readmeLine} />
-          <div className="rounded-lg border border-white/10 bg-white/[0.04] p-4">
+          <div className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-4">
             <div className="mb-3 flex items-center justify-between gap-3">
               <h3 className="text-sm font-semibold text-white">Example post</h3>
               <CopyButton value={examplePost} />
@@ -135,7 +135,7 @@ ${fields.link ? `Link: ${fields.link}\n\n` : ""}Build. Publish. Document. Repeat
 
 function OutputCard({ title, value }: { title: string; value: string }) {
   return (
-    <div className="rounded-lg border border-white/10 bg-slate-950/[0.65] p-4">
+    <div className="surface-card rounded-lg border border-white/10 bg-slate-950/[0.65] p-4">
       <div className="mb-3 flex items-center justify-between gap-3">
         <h3 className="text-sm font-semibold text-white">{title}</h3>
         <CopyButton value={value} />

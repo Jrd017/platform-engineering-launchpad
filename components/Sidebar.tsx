@@ -6,6 +6,7 @@ import {
   Award,
   Brain,
   CalendarCheck,
+  Code2,
   FileText,
   FolderGit2 as Github,
   Home,
@@ -26,6 +27,7 @@ const iconMap: Record<IconKey, LucideIcon> = {
   route: Route,
   layers: Layers,
   library: Library,
+  code: Code2,
   award: Award,
   trophy: Trophy,
   github: Github,
@@ -42,7 +44,7 @@ export function Sidebar() {
 
   return (
     <>
-      <aside className="app-sidebar fixed inset-y-0 left-0 z-30 hidden w-72 border-r border-white/10 bg-ink/[0.76] px-4 py-5 backdrop-blur-xl lg:block">
+      <aside className="app-sidebar fixed inset-y-0 left-0 z-30 hidden w-72 border-r border-white/10 bg-black/35 px-4 py-5 backdrop-blur-2xl lg:block">
         <Link href="/" className="focus-ring block rounded-lg px-2 py-2">
           <p className="text-sm font-semibold uppercase text-cyan-100">Jared</p>
           <h2 className="mt-1 text-xl font-semibold text-white">Platform Engineering Launchpad</h2>
@@ -59,8 +61,8 @@ export function Sidebar() {
                 className={clsx(
                   "focus-ring flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition",
                   active
-                    ? "border border-cyan-300/30 bg-cyan-300/[0.12] text-white shadow-glow"
-                    : "text-slate-300 hover:bg-white/[0.08] hover:text-white"
+                    ? "border border-cyan-300/35 bg-cyan-300/[0.14] text-white shadow-pill"
+                    : "text-slate-300 hover:bg-white/[0.09] hover:text-white hover:shadow-pill"
                 )}
               >
                 <Icon className={clsx("h-4 w-4", active ? "text-cyan-100" : "text-slate-500")} aria-hidden="true" />
@@ -72,7 +74,7 @@ export function Sidebar() {
       </aside>
 
       <nav
-        className="app-mobile-nav scrollbar-soft sticky top-[73px] z-20 flex gap-2 overflow-x-auto border-y border-white/10 bg-ink/[0.82] px-4 py-3 backdrop-blur-xl lg:hidden"
+        className="app-mobile-nav scrollbar-soft sticky top-[73px] z-20 flex gap-2 overflow-x-auto border-y border-white/10 bg-black/35 px-4 py-3 backdrop-blur-2xl lg:hidden"
         aria-label="Mobile navigation"
       >
         {navigationItems.map((item) => {
@@ -86,8 +88,8 @@ export function Sidebar() {
               className={clsx(
                 "focus-ring inline-flex shrink-0 items-center gap-2 rounded-lg border px-3 py-2 text-sm font-medium transition",
                 active
-                  ? "border-cyan-300/[0.35] bg-cyan-300/[0.12] text-white"
-                  : "border-white/10 bg-white/5 text-slate-300 hover:border-white/20 hover:text-white"
+                  ? "border-cyan-300/[0.35] bg-cyan-300/[0.14] text-white shadow-pill"
+                  : "border-white/10 bg-white/5 text-slate-300 hover:border-white/20 hover:text-white hover:shadow-pill"
               )}
             >
               <Icon className="h-4 w-4" aria-hidden="true" />

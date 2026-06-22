@@ -2,38 +2,68 @@
 
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/Badge";
+import { CopyButton } from "@/components/CopyButton";
 import { useProgress } from "@/components/ProgressProvider";
 import type { FreeCertification, PaidCertification } from "@/data/certifications";
+import type { PythonProofLabel } from "@/data/pythonCertificates";
 import type { Status } from "@/data/types";
 
 const studyStatuses: Status[] = ["Not Started", "Studying", "Done"];
 const futureStatuses = ["Later", "Queued", "Ready", "Done"] as const;
+const proofTone: Record<PythonProofLabel, "cyan" | "green" | "amber" | "rose"> = {
+  "Free certificate": "green",
+  "Free badge": "cyan",
+  "Free course": "amber",
+  "Paid certification": "rose"
+};
 
 export function FreeCertificationCard({ certification }: { certification: FreeCertification }) {
   const id = `free-cert:${certification.id}`;
   const { progress, setItemProgress, setStatus } = useProgress();
   const item = progress.items[id];
   const status = (item?.status === "Queued" || item?.status === "Ready" || item?.status === "Later" ? "Not Started" : item?.status) ?? "Not Started";
+  const proofType = certification.proofType ?? "Free course";
 
   return (
-    <article className="glass-panel rounded-lg p-5 transition hover:border-cyan-300/[0.35]">
+    <article className="floating-card glass-panel rounded-lg p-5 transition hover:border-cyan-300/[0.35] hover:shadow-float">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <Badge tone={status === "Done" ? "green" : status === "Studying" ? "cyan" : "violet"}>{status}</Badge>
+          <div className="flex flex-wrap gap-2">
+            <Badge tone={status === "Done" ? "green" : status === "Studying" ? "cyan" : "violet"}>{status}</Badge>
+            <Badge tone={proofTone[proofType]}>{proofType}</Badge>
+            {certification.category ? <Badge tone="slate">{certification.category}</Badge> : null}
+          </div>
           <h3 className="mt-3 text-lg font-semibold text-white">{certification.title}</h3>
           <p className="mt-1 text-sm text-slate-400">{certification.provider}</p>
         </div>
-        <a
-          href={certification.link}
-          target="_blank"
-          rel="noreferrer"
-          className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.06] px-3 py-2 text-sm text-cyan-100 transition hover:border-cyan-300/40"
-        >
-          <ExternalLink className="h-4 w-4" aria-hidden="true" />
-          Link
-        </a>
+        <div className="flex flex-wrap gap-2">
+          <a
+            href={certification.link}
+            target="_blank"
+            rel="noreferrer"
+            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.06] px-3 py-2 text-sm text-cyan-100 transition hover:border-cyan-300/40"
+          >
+            <ExternalLink className="h-4 w-4" aria-hidden="true" />
+            Link
+          </a>
+          <CopyButton value={certification.link} label="Copy" />
+        </div>
       </div>
       <p className="mt-4 text-sm leading-6 text-slate-300">{certification.why}</p>
+      {certification.proof ? (
+        <p className="surface-card mt-3 rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm leading-6 text-slate-300">Proof type: {certification.proof}</p>
+      ) : null}
+      {certification.certificatePage ? (
+        <a
+          href={certification.certificatePage}
+          target="_blank"
+          rel="noreferrer"
+          className="focus-ring mt-3 inline-flex items-center gap-2 rounded-md text-sm font-medium text-cyan-100 transition hover:text-white"
+        >
+          <ExternalLink className="h-4 w-4" aria-hidden="true" />
+          Certificate page
+        </a>
+      ) : null}
       <div className="mt-5 grid gap-3 md:grid-cols-2">
         <label className="grid gap-1 text-xs font-medium text-slate-300">
           Status
@@ -78,6 +108,15 @@ export function FreeCertificationCard({ certification }: { certification: FreeCe
             className="focus-ring rounded-md border border-white/10 bg-slate-950/80 px-3 py-2 text-sm text-white placeholder:text-slate-600"
           />
         </label>
+        <label className="grid gap-1 text-xs font-medium text-slate-300 md:col-span-2">
+          Notes
+          <textarea
+            value={item?.notes ?? ""}
+            onChange={(event) => setItemProgress(id, { notes: event.target.value })}
+            rows={3}
+            className="focus-ring resize-y rounded-md border border-white/10 bg-slate-950/80 px-3 py-2 text-sm leading-6 text-white"
+          />
+        </label>
       </div>
     </article>
   );
@@ -90,7 +129,7 @@ export function PaidCertificationCard({ certification }: { certification: PaidCe
   const status = rawStatus === "Not Started" || rawStatus === "Studying" ? "Later" : rawStatus ?? "Later";
 
   return (
-    <article className="glass-panel rounded-lg p-5 transition hover:border-violet-300/[0.35] hover:shadow-violet">
+    <article className="floating-card glass-panel rounded-lg p-5 transition hover:border-violet-300/[0.35] hover:shadow-float">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div className="space-y-2">
           <div className="flex flex-wrap gap-2">

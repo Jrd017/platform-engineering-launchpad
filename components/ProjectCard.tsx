@@ -20,13 +20,14 @@ export function ProjectCard({ project }: { project: ProjectIdea }) {
   const trackableItems = project.features ?? project.deliverables ?? [];
 
   return (
-    <article className="glass-panel rounded-lg p-5 transition hover:border-cyan-300/[0.35] hover:shadow-glow">
+    <article className="floating-card glass-panel rounded-lg p-5 transition hover:border-cyan-300/[0.35] hover:shadow-float">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
           <Badge tone={project.priority === "Highest" ? "cyan" : project.priority === "High" ? "green" : project.priority === "Medium" ? "violet" : "slate"}>
             {project.priority} priority
           </Badge>
           <h3 className="mt-3 text-xl font-semibold text-white">{project.title}</h3>
+          {project.language ? <p className="mt-1 text-sm text-slate-400">{project.language}</p> : null}
         </div>
         <select
           value={status}
@@ -43,13 +44,14 @@ export function ProjectCard({ project }: { project: ProjectIdea }) {
       </div>
       <p className="mt-4 text-sm leading-6 text-slate-300">{project.description}</p>
       {project.important ? (
-        <p className="mt-3 rounded-lg border border-amber-300/25 bg-amber-300/10 p-3 text-sm leading-6 text-amber-100">{project.important}</p>
+        <p className="surface-card mt-3 rounded-lg border border-amber-300/25 bg-amber-300/10 p-3 text-sm leading-6 text-amber-100">{project.important}</p>
       ) : null}
       {project.reasonForLowPriority ? (
-        <p className="mt-3 rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm leading-6 text-slate-300">{project.reasonForLowPriority}</p>
+        <p className="surface-card mt-3 rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm leading-6 text-slate-300">{project.reasonForLowPriority}</p>
       ) : null}
       {project.techStack?.length ? (
         <div className="mt-4 flex flex-wrap gap-2">
+          {project.language ? <Badge tone="cyan">{project.language}</Badge> : null}
           {project.techStack.map((tech) => (
             <Badge key={tech} tone="slate">
               {tech}

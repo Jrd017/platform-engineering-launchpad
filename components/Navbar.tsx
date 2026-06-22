@@ -118,7 +118,7 @@ export function Navbar() {
           aria-hidden="true"
         />
       ) : null}
-      <header className="app-navbar sticky top-0 z-30 border-b border-white/10 bg-ink/[0.82] backdrop-blur-xl">
+      <header className="app-navbar sticky top-0 z-30 border-b border-white/10 bg-black/35 backdrop-blur-2xl">
       <div className="flex min-h-[73px] flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6 lg:px-8">
         <div>
           <p className="text-xs font-medium uppercase text-cyan-100">{isLoaded ? "Progress saved locally" : "Loading local progress"}</p>
@@ -130,7 +130,7 @@ export function Navbar() {
             ref={themeButtonRef}
             type="button"
             onClick={toggleTheme}
-            className="theme-toggle-button focus-ring inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/10 bg-white/[0.08] text-slate-100 transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
+            className="theme-toggle-button focus-ring inline-flex h-10 w-10 items-center justify-center rounded-md border border-white/15 bg-white/[0.1] text-slate-100 shadow-pill transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
             aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
             title={theme === "dark" ? "Light mode" : "Dark mode"}
           >
@@ -141,7 +141,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={handleExport}
-            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.08] px-3 py-2 text-sm font-medium text-slate-100 transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
+            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/[0.1] px-3 py-2 text-sm font-medium text-slate-100 shadow-pill transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
             aria-label="Export progress as JSON"
             title="Export progress"
           >
@@ -151,7 +151,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={() => fileInputRef.current?.click()}
-            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.08] px-3 py-2 text-sm font-medium text-slate-100 transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
+            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/[0.1] px-3 py-2 text-sm font-medium text-slate-100 shadow-pill transition hover:border-cyan-300/40 hover:bg-cyan-300/10"
             aria-label="Import progress JSON"
             title="Import progress"
           >
@@ -173,7 +173,7 @@ export function Navbar() {
           <button
             type="button"
             onClick={handleReset}
-            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/[0.08] px-3 py-2 text-sm font-medium text-slate-100 transition hover:border-rose-300/40 hover:bg-rose-300/10"
+            className="focus-ring inline-flex items-center gap-2 rounded-md border border-white/15 bg-white/[0.1] px-3 py-2 text-sm font-medium text-slate-100 shadow-pill transition hover:border-rose-300/40 hover:bg-rose-300/10"
             aria-label="Reset all progress"
             title="Reset progress"
           >

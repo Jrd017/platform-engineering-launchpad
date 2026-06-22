@@ -5,14 +5,17 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   Award,
+  BookOpenCheck,
   Brain,
   CalendarCheck,
+  Code2,
   FileText,
   FolderGit2 as Github,
   Layers,
   Lightbulb,
   Share2 as Linkedin,
   Palette,
+  Rocket,
   Route
 } from "lucide-react";
 import { Badge } from "@/components/Badge";
@@ -25,12 +28,16 @@ import { freeCertifications } from "@/data/certifications";
 import { githubChecklist } from "@/data/githubChecklist";
 import { platformRoadmap } from "@/data/platformRoadmap";
 import { portfolioChecklist } from "@/data/portfolioChecklist";
+import { pythonCertificates } from "@/data/pythonCertificates";
+import { pythonStudySteps } from "@/data/pythonLearningPath";
+import { pythonProjects } from "@/data/pythonProjects";
 import { projectIdeas } from "@/data/projects";
 import { resumeChecklist } from "@/data/resumeChecklist";
 import { dailyChecklist, weeklyPlan } from "@/data/weeklyPlan";
 import { calculateProgress } from "@/lib/progress";
 
 const quickActions = [
+  { label: "Open Python Learning Path", href: "/python-learning-path", icon: Code2 },
   { label: "Start Roadmap", href: "/platform-roadmap", icon: Route },
   { label: "Fix GitHub", href: "/github-cleanup", icon: Github },
   { label: "Build Resume", href: "/resume", icon: FileText },
@@ -47,6 +54,9 @@ export default function HomeDashboardPage() {
   const resumeIds = resumeChecklist.map((item) => item.id);
   const portfolioIds = portfolioChecklist.map((item) => item.id);
   const projectIds = projectIdeas.map((project) => `project:${project.id}`);
+  const pythonPathIds = pythonStudySteps.map((step) => `python:path:${step.id}`);
+  const pythonCertificateIds = pythonCertificates.map((certificate) => `free-cert:${certificate.id}`);
+  const pythonProjectIds = pythonProjects.map((project) => `python-project:${project.id}`);
   const weeklyIds = [...weeklyPlan.flatMap((week) => week.items.map((item) => item.id)), ...dailyChecklist.map((item) => item.id)];
 
   const platformProgress = calculateProgress(platformIds, progress.items);
@@ -55,9 +65,24 @@ export default function HomeDashboardPage() {
   const resumeProgress = calculateProgress(resumeIds, progress.items);
   const portfolioProgress = calculateProgress(portfolioIds, progress.items);
   const projectProgress = calculateProgress(projectIds, progress.items);
+  const pythonPathProgress = calculateProgress(pythonPathIds, progress.items);
+  const pythonCertificateProgress = calculateProgress(pythonCertificateIds, progress.items);
+  const pythonProjectProgress = calculateProgress(pythonProjectIds, progress.items);
   const weeklyProgress = calculateProgress(weeklyIds, progress.items);
   const overall = Math.round(
-    (platformProgress + freeCertProgress + githubProgress + resumeProgress + portfolioProgress + projectProgress + weeklyProgress) / 7
+    (
+      platformProgress +
+      freeCertProgress +
+      githubProgress +
+      resumeProgress +
+      portfolioProgress +
+      projectProgress +
+      pythonPathProgress +
+      pythonCertificateProgress +
+      pythonProjectProgress +
+      weeklyProgress
+    ) /
+      10
   );
 
   return (
@@ -114,6 +139,9 @@ export default function HomeDashboardPage() {
       <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <DashboardCard title="Platform Engineering Roadmap Progress" value={platformProgress} href="/platform-roadmap" icon={Layers} badge="Core study" loading={!isLoaded} />
         <DashboardCard title="Free Certifications Progress" value={freeCertProgress} href="/free-certifications" icon={Award} badge="Free badges" loading={!isLoaded} />
+        <DashboardCard title="Python Learning Path Progress" value={pythonPathProgress} href="/python-learning-path" icon={BookOpenCheck} badge="Exact order" loading={!isLoaded} />
+        <DashboardCard title="Free Python Certificates Progress" value={pythonCertificateProgress} href="/python-learning-path" icon={Code2} badge="Python proof" loading={!isLoaded} />
+        <DashboardCard title="Python Projects Progress" value={pythonProjectProgress} href="/python-learning-path" icon={Rocket} badge="Build proof" loading={!isLoaded} />
         <DashboardCard title="GitHub Cleanup Progress" value={githubProgress} href="/github-cleanup" icon={Github} badge="Public proof" loading={!isLoaded} />
         <DashboardCard title="Resume Progress" value={resumeProgress} href="/resume" icon={FileText} badge="One-page target" loading={!isLoaded} />
         <DashboardCard title="Portfolio Progress" value={portfolioProgress} href="/portfolio-planner" icon={Palette} badge="Project home" loading={!isLoaded} />
@@ -131,7 +159,7 @@ export default function HomeDashboardPage() {
               <Link
                 key={action.href}
                 href={action.href}
-                className="focus-ring group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.05] p-4 text-sm font-semibold text-white transition hover:border-cyan-300/[0.35] hover:bg-cyan-300/10"
+                className="surface-card focus-ring group flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.05] p-4 text-sm font-semibold text-white transition hover:border-cyan-300/[0.35] hover:bg-cyan-300/10"
               >
                 <span className="rounded-md border border-white/10 bg-white/[0.06] p-2 text-cyan-100">
                   <Icon className="h-5 w-5" aria-hidden="true" />
@@ -148,7 +176,7 @@ export default function HomeDashboardPage() {
 
 function InfoTile({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-white/10 bg-white/[0.045] p-4">
+    <div className="surface-card rounded-lg border border-white/10 bg-white/[0.045] p-4">
       <p className="text-xs font-semibold uppercase text-slate-500">{label}</p>
       <p className="mt-2 text-sm leading-6 text-slate-200">{value}</p>
     </div>

@@ -4,6 +4,7 @@ export type ProjectIdea = {
   id: string;
   title: string;
   priority: Priority;
+  language?: string;
   description: string;
   features?: string[];
   deliverables?: string[];
@@ -68,6 +69,71 @@ export const projectIdeas: ProjectIdea[] = [
     priority: "High",
     description: "A study tool that creates quizzes, study guides, flashcards, and reviewers.",
     features: ["Subject selection", "Quiz mode", "Study mode", "Glossary", "Wrong answer review", "Progress tracking", "Export notes"]
+  },
+  {
+    id: "github-repo-analyzer",
+    title: "GitHub Repo Analyzer",
+    priority: "High",
+    language: "Python",
+    description: "Analyze my GitHub repositories and generate cleanup suggestions.",
+    features: [
+      "Check missing README",
+      "Check missing description",
+      "Check missing topics",
+      "Check old commits",
+      "Check missing license",
+      "Generate improvement report",
+      "Export markdown summary"
+    ],
+    techStack: ["Python", "Requests", "GitHub API", "Markdown export"]
+  },
+  {
+    id: "resume-keyword-checker",
+    title: "Resume Keyword Checker",
+    priority: "High",
+    language: "Python",
+    description: "Compare my resume text against internship job descriptions.",
+    features: [
+      "Paste resume",
+      "Paste job description",
+      "Detect missing keywords",
+      "Suggest stronger project bullets",
+      "Generate improvement checklist"
+    ],
+    techStack: ["Python", "Text processing", "FastAPI later"]
+  },
+  {
+    id: "study-quiz-generator",
+    title: "Study Quiz Generator",
+    priority: "High",
+    language: "Python and TypeScript",
+    description: "Generate quizzes from notes and track wrong answers.",
+    features: ["Add notes", "Generate questions", "Take quiz", "Review weak topics", "Export reviewer"],
+    techStack: ["Python", "TypeScript", "Next.js", "FastAPI later"]
+  },
+  {
+    id: "fastapi-certificate-tracker",
+    title: "FastAPI Certificate Tracker",
+    priority: "Medium",
+    language: "Python",
+    description: "API for tracking certifications, badges, links, and completion dates.",
+    features: ["CRUD certifications", "Add provider", "Add link", "Add badge URL", "Add completion status", "Connect later to frontend"],
+    techStack: ["Python", "FastAPI", "Pydantic", "pytest"]
+  },
+  {
+    id: "cli-platform-helper",
+    title: "CLI Platform Helper",
+    priority: "Medium",
+    language: "Python",
+    description: "Command line helper for platform engineering study commands.",
+    features: [
+      "Show Docker commands",
+      "Show Git commands",
+      "Show Kubernetes commands",
+      "Show Terraform commands",
+      "Save personal notes"
+    ],
+    techStack: ["Python", "CLI", "File storage"]
   },
   {
     id: "language-teacher",

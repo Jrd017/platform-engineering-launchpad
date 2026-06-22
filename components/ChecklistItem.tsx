@@ -37,7 +37,7 @@ export function ChecklistItem({
   return (
     <article
       className={clsx(
-        "rounded-lg border bg-white/[0.045] transition hover:border-cyan-300/30 hover:bg-white/[0.07]",
+        "surface-card rounded-lg border bg-white/[0.045] transition hover:border-cyan-300/30 hover:bg-white/[0.07]",
         checked ? "border-emerald-300/25" : "border-white/10",
         compact ? "p-3" : "p-4"
       )}

@@ -4,7 +4,7 @@ import type { Resource } from "@/data/resources";
 
 export function ResourceCard({ resource }: { resource: Resource }) {
   return (
-    <article className="glass-panel group rounded-lg p-5 transition hover:border-cyan-300/[0.35] hover:shadow-glow">
+    <article className="floating-card glass-panel group rounded-lg p-5 transition hover:border-cyan-300/[0.35] hover:shadow-float">
       <div className="flex items-start justify-between gap-4">
         <Badge tone="cyan">{resource.category}</Badge>
         <ExternalLink className="h-4 w-4 shrink-0 text-slate-500 transition group-hover:text-cyan-100" aria-hidden="true" />

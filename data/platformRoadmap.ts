@@ -81,10 +81,10 @@ export const platformRoadmap: PlatformPhase[] = [
       {
         id: "python-basics",
         title: "Python basics",
-        explanation: "Use Python for scripts, tooling, APIs, and automation.",
-        link: "https://docs.python.org/3/tutorial/",
+        explanation: "Follow the exact order: setup, Cisco Python Essentials 1, CS50P, freeCodeCamp Python Certification, Kaggle Python, Cisco Python Essentials 2, FastAPI, pytest, pandas, and automation projects.",
+        link: "/python-learning-path",
         difficulty: "Beginner",
-        estimatedTime: "8 hours"
+        estimatedTime: "8 to 12 weeks"
       }
     ]
   },

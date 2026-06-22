@@ -6,9 +6,14 @@ export const STORAGE_KEY = "jared-platform-engineering-launchpad:v1";
 export type ItemProgress = {
   checked?: boolean;
   status?: Status | "Queued" | "Ready" | "Later";
+  startDate?: string;
   badgeUrl?: string;
   completedDate?: string;
   certificateUrl?: string;
+  finalProjectUrl?: string;
+  projectLinks?: string;
+  repoUrl?: string;
+  demoUrl?: string;
   notes?: string;
   updatedAt?: string;
 };

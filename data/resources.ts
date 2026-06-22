@@ -1,3 +1,5 @@
+import { pythonResources } from "./pythonResources";
+
 export type Resource = {
   id: string;
   category: string;
@@ -188,5 +190,12 @@ export const resources: Resource[] = [
     title: "Terraform Tutorials",
     url: "https://developer.hashicorp.com/terraform/tutorials",
     description: "Official Terraform tutorials."
-  }
+  },
+  ...pythonResources.map((resource) => ({
+    id: `python-${resource.id}`,
+    category: `Python ${resource.category}`,
+    title: resource.title,
+    url: resource.url,
+    description: resource.why
+  }))
 ];

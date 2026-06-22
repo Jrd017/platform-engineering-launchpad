@@ -16,12 +16,12 @@ export default function WeeklyPlanPage() {
   return (
     <div className="space-y-6">
       <PageHeader
-        eyebrow="4-week sprint"
+        eyebrow="6-week sprint"
         title="Weekly Action Plan"
-        description="A calm four-week plan for GitHub, resume, portfolio, ForgePanel, Docker, CI/CD, badges, LinkedIn, and internship applications."
+        description="A tutorial-based six-week plan for TypeScript practice, Python study, certificates, automation scripts, FastAPI, pytest, and GitHub proof."
       />
 
-      <SectionPanel title="Action Progress" description="Study 1 hour. Build 1 hour. Document 30 minutes. Push to GitHub. Update progress.">
+      <SectionPanel title="Action Progress" description="Code TypeScript, study Python, practice exercises, build one small script or feature, document, and push to GitHub.">
         <ProgressBar value={totalProgress} loading={!isLoaded} label="Weekly and daily checklist progress" />
       </SectionPanel>
 
@@ -38,7 +38,7 @@ export default function WeeklyPlanPage() {
       </section>
 
       <SectionPanel title="Daily Checklist" description="A repeatable loop that keeps the career system moving.">
-        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {dailyChecklist.map((item) => (
             <ChecklistItem key={item.id} id={item.id} title={item.title} compact />
           ))}

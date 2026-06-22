@@ -40,10 +40,10 @@ export function RoadmapDetailPanel({
       <div className="mt-5 space-y-5">
         <DetailBlock title="Why it matters" body={stage.why} />
         <div>
-          <h3 className="text-sm font-semibold text-white">What to do</h3>
+          <h3 className="text-sm font-semibold text-white">{stage.id === "python-mastery" ? "What to follow" : "What to do"}</h3>
           <ul className="mt-2 grid gap-2 text-sm leading-6 text-slate-300">
             {stage.whatToDo.map((item) => (
-              <li key={item} className="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+              <li key={item} className="surface-card rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
                 {item}
               </li>
             ))}
@@ -59,7 +59,7 @@ export function RoadmapDetailPanel({
                   href={link.url}
                   target="_blank"
                   rel="noreferrer"
-                  className="focus-ring inline-flex items-center justify-between gap-3 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-cyan-100 transition hover:border-cyan-300/[0.35] hover:text-white"
+                  className="surface-card focus-ring inline-flex items-center justify-between gap-3 rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 text-sm text-cyan-100 transition hover:border-cyan-300/[0.35] hover:text-white"
                 >
                   <span>{link.label}</span>
                   <ExternalLink className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -90,7 +90,7 @@ function DetailBlock({ title, body }: { title: string; body: string }) {
 
 function DetailMetric({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-lg border border-white/10 bg-white/[0.04] p-3">
+    <div className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-3">
       <dt className="text-xs font-semibold uppercase text-slate-500">{label}</dt>
       <dd className="mt-1 text-sm leading-5 text-slate-200">{value}</dd>
     </div>

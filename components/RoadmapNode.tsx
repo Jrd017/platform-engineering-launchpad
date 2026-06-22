@@ -68,7 +68,7 @@ export function RoadmapNode({
         </div>
         <span className="text-xs font-semibold text-slate-200">{stage.progress}%</span>
       </div>
-      <p className="mt-4 inline-flex rounded-md border border-white/10 bg-white/[0.07] px-2.5 py-1.5 text-xs font-medium leading-5 text-slate-200">
+      <p className="surface-card mt-4 inline-flex rounded-md border border-white/10 bg-white/[0.07] px-2.5 py-1.5 text-xs font-medium leading-5 text-slate-200">
         {stage.status}
       </p>
     </motion.button>

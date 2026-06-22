@@ -76,7 +76,7 @@ ${future || "- Add future improvements."}
           <TextArea label="What I learned" value={fields.learned} onChange={(value) => updateField("learned", value)} rows={3} />
           <TextArea label="Future improvements" value={fields.future} onChange={(value) => updateField("future", value)} rows={4} />
         </div>
-        <div className="rounded-lg border border-white/10 bg-slate-950/70 p-4">
+        <div className="surface-card rounded-lg border border-white/10 bg-slate-950/70 p-4">
           <div className="mb-3 flex items-center justify-between gap-3">
             <h3 className="text-sm font-semibold text-white">Generated README</h3>
             <CopyButton value={generated} />

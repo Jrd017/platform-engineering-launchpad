@@ -1,4 +1,5 @@
 import type { Priority } from "./types";
+import { pythonCertificates, type PythonProofLabel } from "./pythonCertificates";
 
 export type FreeCertification = {
   id: string;
@@ -6,6 +7,10 @@ export type FreeCertification = {
   provider: string;
   link: string;
   why: string;
+  category?: string;
+  proofType?: PythonProofLabel;
+  proof?: string;
+  certificatePage?: string;
 };
 
 export type PaidCertification = {
@@ -110,7 +115,18 @@ export const freeCertifications: FreeCertification[] = [
     provider: "Oracle",
     link: "https://education.oracle.com/oracle-cloud-infrastructure-certification",
     why: "Treat this as optional cloud signal and verify the current exam price before committing."
-  }
+  },
+  ...pythonCertificates.map((certificate) => ({
+    id: certificate.id,
+    title: certificate.title,
+    provider: certificate.provider,
+    link: certificate.link,
+    why: `${certificate.category}. Proof to collect: ${certificate.proof}`,
+    category: "Python",
+    proofType: certificate.label,
+    proof: certificate.proof,
+    certificatePage: certificate.certificatePage
+  }))
 ];
 
 export const paidCertifications: PaidCertification[] = [

@@ -11,6 +11,7 @@ This project is built for Jared P. Oxales, a 4th year Computer Science student f
 Jared Platform Engineering Launchpad is an all-in-one dashboard for tracking:
 
 - Platform engineering study progress
+- Python learning path, free certificates, practice, and projects
 - Free and future certification plans
 - GitHub cleanup tasks
 - Resume readiness
@@ -21,6 +22,18 @@ Jared Platform Engineering Launchpad is an all-in-one dashboard for tracking:
 - Weekly action plans
 
 Version 1 is intentionally frontend-only. It uses `localStorage` for saved progress and is structured so a backend can be added later.
+
+## Python Learning Direction
+
+This project now includes a guided Python learning path with tutorials, free certificates, free badges, practice websites, and Python project ideas. The path starts with Cisco Python Essentials 1, continues with CS50P, freeCodeCamp Python Certification, Kaggle Python, Cisco Python Essentials 2, then moves into FastAPI, pytest, pandas, automation, and backend projects.
+
+## Main Languages
+
+TypeScript:
+Used for web apps, dashboards, frontend, backend APIs, and developer tools.
+
+Python:
+Used for automation, scripting, backend APIs, data work, AI support, and internal tooling.
 
 ## Responsive Design Status
 
@@ -74,6 +87,7 @@ Current desktop screenshots from the app:
 - Import progress from JSON
 - Reset progress with confirmation
 - Platform engineering roadmap tracker
+- Python Learning Path and Free Certifications page
 - Searchable study links library
 - Free certification tracker with badge and certificate URL fields
 - Paid future certification planning section
@@ -153,7 +167,7 @@ components/
   Reusable dashboard, roadmap, checklist, generator, quiz, and layout components.
 
 data/
-  Typed content for roadmaps, resources, certifications, GitHub tasks, resume tasks, projects, quizzes, and weekly plans.
+  Typed content for roadmaps, Python learning paths, resources, certifications, GitHub tasks, resume tasks, projects, quizzes, and weekly plans.
 
 lib/
   Progress state helpers and localStorage normalization.

@@ -23,13 +23,13 @@ export function DashboardCard({
   loading?: boolean;
 }) {
   return (
-    <motion.div whileHover={{ y: -4, scale: 1.01 }} transition={{ type: "spring", stiffness: 260, damping: 22 }}>
+    <motion.div whileHover={{ y: -7, scale: 1.015 }} transition={{ type: "spring", stiffness: 260, damping: 22 }}>
       <Link
         href={href}
-        className="focus-ring glass-panel group block h-full rounded-lg p-5 transition hover:border-cyan-300/[0.35] hover:shadow-glow"
+        className="focus-ring floating-card glass-panel group block h-full rounded-lg p-5 transition hover:border-cyan-300/[0.38] hover:shadow-float"
       >
         <div className="mb-5 flex items-start justify-between gap-3">
-          <div className="rounded-md border border-white/10 bg-white/10 p-2 text-cyan-100">
+          <div className="rounded-md border border-white/15 bg-white/[0.11] p-2 text-cyan-100 shadow-pill">
             <Icon className="h-5 w-5" aria-hidden="true" />
           </div>
           <ArrowUpRight className="h-4 w-4 text-slate-500 transition group-hover:text-cyan-100" aria-hidden="true" />

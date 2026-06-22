@@ -57,7 +57,7 @@ export default function GitHubCleanupPage() {
 
         <div className="space-y-5">
           <SectionPanel title="Suggested Bio">
-            <p className="rounded-lg border border-white/10 bg-slate-950/60 p-4 text-sm leading-6 text-slate-200">{suggestedGithubBio}</p>
+            <p className="surface-card rounded-lg border border-white/10 bg-slate-950/60 p-4 text-sm leading-6 text-slate-200">{suggestedGithubBio}</p>
             <CopyButton value={suggestedGithubBio} className="mt-3" />
           </SectionPanel>
 
@@ -75,7 +75,7 @@ export default function GitHubCleanupPage() {
           <SectionPanel title="Repo Cleanup Notes">
             <div className="grid gap-3">
               {repoCleanupNotes.map((note) => (
-                <p key={note} className="rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm leading-6 text-slate-300">
+                <p key={note} className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-3 text-sm leading-6 text-slate-300">
                   {note}
                 </p>
               ))}

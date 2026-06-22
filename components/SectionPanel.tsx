@@ -13,7 +13,7 @@ export function SectionPanel({
   className?: string;
 }) {
   return (
-    <section className={clsx("glass-panel rounded-lg p-5", className)}>
+    <section className={clsx("floating-card glass-panel rounded-lg p-5", className)}>
       {title || description ? (
         <div className="mb-5">
           {title ? <h2 className="text-lg font-semibold text-white">{title}</h2> : null}

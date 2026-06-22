@@ -65,7 +65,7 @@ export function QuizRunner() {
   return (
     <SectionPanel title="Quiz Runner" description="Take a short quiz, see your score, and review missed concepts.">
       <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_320px]">
-        <div className="rounded-lg border border-white/10 bg-white/[0.04] p-4">
+        <div className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-4">
           <div className="mb-5 flex flex-wrap items-end justify-between gap-3">
             <label className="grid min-w-56 gap-1 text-xs font-medium text-slate-300">
               Topic
@@ -103,7 +103,7 @@ export function QuizRunner() {
           ) : null}
 
           {mode === "ready" && questions.length > 0 ? (
-            <div className="rounded-lg border border-dashed border-white/[0.15] p-8 text-center">
+            <div className="surface-card rounded-lg border border-dashed border-white/[0.15] p-8 text-center">
               <p className="text-sm text-slate-300">{questions.length} questions ready.</p>
             </div>
           ) : null}
@@ -163,7 +163,7 @@ export function QuizRunner() {
                   <h3 className="text-sm font-semibold text-white">Wrong answers</h3>
                   <div className="mt-3 grid gap-3">
                     {wrongQuestions.map((question) => (
-                      <div key={question.id} className="rounded-lg border border-white/10 bg-slate-950/50 p-4">
+                      <div key={question.id} className="surface-card rounded-lg border border-white/10 bg-slate-950/50 p-4">
                         <Badge tone="violet">{question.topic}</Badge>
                         <p className="mt-3 text-sm font-semibold text-white">{question.question}</p>
                         <p className="mt-2 text-sm text-slate-300">Correct answer: {question.correctAnswer}</p>
@@ -181,7 +181,7 @@ export function QuizRunner() {
           ) : null}
         </div>
 
-        <aside className="rounded-lg border border-white/10 bg-white/[0.04] p-4">
+        <aside className="surface-card rounded-lg border border-white/10 bg-white/[0.04] p-4">
           <h3 className="text-sm font-semibold text-white">Review focus</h3>
           {reviewTopics.length ? (
             <div className="mt-3 flex flex-wrap gap-2">
@@ -200,7 +200,7 @@ export function QuizRunner() {
               <p className="text-sm text-slate-400">No attempts yet.</p>
             ) : (
               progress.quizAttempts.slice(0, 5).map((attempt) => (
-                <div key={attempt.id} className="rounded-md border border-white/10 bg-slate-950/50 px-3 py-2 text-sm text-slate-300">
+                <div key={attempt.id} className="surface-card rounded-md border border-white/10 bg-slate-950/50 px-3 py-2 text-sm text-slate-300">
                   <div className="flex justify-between gap-3">
                     <span>{attempt.topic}</span>
                     <span className="font-semibold text-white">
